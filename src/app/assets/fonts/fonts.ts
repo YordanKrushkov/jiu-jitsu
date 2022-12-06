@@ -5,6 +5,7 @@ import ComfortaaMedium from './Comfortaa-Medium.ttf';
 import ComfortaaSemiBold from './Comfortaa-SemiBold.ttf';
 import ComfortaaBold from './Comfortaa-Bold.ttf';
 import Poiret from './PoiretOne-Regular.ttf';
+import Rubik from './RubikMonoOne-Regular.ttf';
 
 export const FontStyles = createGlobalStyle`
 
@@ -33,5 +34,9 @@ export const FontStyles = createGlobalStyle`
 @font-face {
   font-family: 'Poiret';
   src: url(${Poiret});
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url(${Rubik});
 }
 `;

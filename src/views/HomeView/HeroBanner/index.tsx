@@ -7,7 +7,7 @@ const HeroBanner: React.FC = () => {
       <img src={marian} alt='hero baner'/>
       <TextWrapper>
         <h1>Бразилско джиу джицу</h1>
-        <h4>гр. Златоград</h4>
+        <h4>Златоград</h4>
         <Button>Запише се</Button>
       </TextWrapper>
     </Image>

@@ -8,7 +8,6 @@ export const Header: React.FC = () => {
     { path: ROUTES.ABOUT_PAGE, name: 'График' },
     { path: ROUTES.PORTFOLIO, name: 'Цени' },
     { path: ROUTES.CONTACTS, name: 'За нас' },
-    { path: ROUTES.CONTACTS, name: 'Новини' },
     { path: ROUTES.CONTACTS, name: 'Галерия' },
     { path: ROUTES.CONTACTS, name: 'Контакти' }
   ];
