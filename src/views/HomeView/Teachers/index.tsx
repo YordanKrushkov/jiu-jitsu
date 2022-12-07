@@ -1,14 +1,19 @@
 import React from 'react';
 import { Wrapper, Image, TextWrapper } from './index.styled';
 import image from '@assets/images/marian2.jpg';
+import { useMediaQuery } from '../../../app/hooks/useMediaQuery';
 // MdSportsKabaddi
 const Teachers: React.FC = () => {
+  const width = useMediaQuery();
   return (
     <Wrapper>
       <div>
         <TextWrapper>
           <h2>Запознай се с нашият</h2>
           <h1>преподавател</h1>
+          {width < 800 && <Image>
+            <img src={image} alt='second baner'/>
+          </Image>}
           <div>
             <h3>Мариан Джамбазов</h3>
             <p>
@@ -24,9 +29,10 @@ const Teachers: React.FC = () => {
           </div>
         </TextWrapper>
       </div>
-      <Image>
+      {width > 800 && <Image>
         <img src={image} alt='second baner'/>
       </Image>
+      }
     </Wrapper>
 
   );

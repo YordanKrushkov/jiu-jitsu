@@ -1,4 +1,3 @@
-import { mobile } from '@constants';
 import styled from 'styled-components';
 export const HeaderWrapper = styled.header`
   display: flex;
@@ -37,6 +36,7 @@ export const BookNow = styled.div`
   display: flex;
   align-items: center;
   gap: 20px;
+
 `;
 export const Button = styled.button`
     font-family: 'ComfortaaBold';
@@ -50,7 +50,7 @@ export const Button = styled.button`
     /* box-shadow: ${({ theme }) => theme.styles.boxShadow}; */
     border-radius: 2px;
     border: 1px solid ${({ theme }) => theme.colors.textColor};
-    ${mobile({ padding: '5px 10px', fontSize: '14px' })}
+
     &:hover{
     cursor: pointer;
     /* box-shadow: ${({ theme }) => theme.styles.boxShadowHover}; */

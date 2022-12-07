@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage';
 
 const AppWihtStyles = styled.div`
   font-family: 'ComfortaaRegular';
+  box-sizing: border-box;
 
 `;
 
