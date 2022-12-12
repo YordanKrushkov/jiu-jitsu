@@ -1,17 +1,10 @@
-import { ROUTES } from '@constants';
 import React from 'react';
 import { HeaderWrapper, Logo, Nav, BookNow, Button } from './index.styled';
 import { NavLink } from 'react-router-dom';
 import bjj from '@assets/images/bjjLogo.png';
-export const DesktopHeader: React.FC = () => {
-  const routes = [
-    { path: ROUTES.ABOUT_PAGE, name: 'График' },
-    { path: ROUTES.PORTFOLIO, name: 'Цени' },
-    { path: ROUTES.CONTACTS, name: 'За нас' },
-    { path: ROUTES.CONTACTS, name: 'Галерия' },
-    { path: ROUTES.CONTACTS, name: 'Контакти' }
-  ];
+import { routes } from '@core/data';
 
+export const DesktopHeader: React.FC = () => {
   const activeStyle = {
     textDecoration: 'none',
     color: 'red',

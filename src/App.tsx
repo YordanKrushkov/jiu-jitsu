@@ -3,7 +3,7 @@ import { Header } from '@core/components';
 import { BrowserRouter as Router } from 'react-router-dom';
 import styled, { ThemeProvider } from 'styled-components';
 import { theme } from '@constants';
-import HomePage from './pages/HomePage';
+import AppRouter from './AppRouter';
 
 const AppWihtStyles = styled.div`
   font-family: 'ComfortaaRegular';
@@ -17,7 +17,7 @@ const App: React.FC = () => {
       <ThemeProvider theme={theme}>
         <AppWihtStyles >
           <Header />
-          <HomePage/>
+          <AppRouter/>
         </AppWihtStyles>
       </ThemeProvider>
 

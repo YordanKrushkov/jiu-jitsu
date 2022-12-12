@@ -17,6 +17,9 @@
       "@core/components": [
         "./app/core/components"
       ],
+      "@core/data": [
+        "./app/core/data"
+      ],
       "@assets": [
         "./app/assets"
       ],
@@ -30,7 +33,7 @@
         "./app/utils"
       ],
       "@hooks": [
-        "./hooks"
+        "./app/hooks"
       ],
       "@Views/*": [
         "./Views/*"

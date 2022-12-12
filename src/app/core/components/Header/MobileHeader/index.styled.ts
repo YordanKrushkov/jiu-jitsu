@@ -10,11 +10,12 @@ const breatheOutAnimation = keyframes`
 
 const MobileNavWrapper = styled.div`
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
+  position: relative;
+  padding: 5px 10px;
 `;
 
 const Menu = styled(IoMenu)`

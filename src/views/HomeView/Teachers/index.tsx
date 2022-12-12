@@ -1,7 +1,8 @@
 import React from 'react';
 import { Wrapper, Image, TextWrapper } from './index.styled';
 import image from '@assets/images/marian2.jpg';
-import { useMediaQuery } from '../../../app/hooks/useMediaQuery';
+import { useMediaQuery } from '@hooks';
+
 // MdSportsKabaddi
 const Teachers: React.FC = () => {
   const width = useMediaQuery();

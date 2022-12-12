@@ -12,6 +12,7 @@ export const Logo = styled.div`
   flex-direction: column;
   align-items: center;
   height: 60px;
+  ${mobile({ position: 'absolute', left: '0', right: '0', top: '0px', margin: 'auto', height: '50px', width: 'fit-content' })}
   p{
     margin: 0;
   }
@@ -19,6 +20,8 @@ export const Logo = styled.div`
   img{
     height: 100%;
     width: 60px;
+    ${mobile({ width: '50px' })}
+
   }
 `;
 export const Nav = styled.nav`
