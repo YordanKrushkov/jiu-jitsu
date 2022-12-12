@@ -26,7 +26,6 @@ export const Form = styled.form`
   gap: 10px;
   width: 50%;
   ${tablet({ width: '100%' })};
-  ${mobile({ width: '80%' })};
 
   input, textarea, button{
     padding: 10px;
