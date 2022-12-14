@@ -1,5 +1,5 @@
 import { Map, Description, Wrapper, Form, Input, TextArea, Button, SocialWrapper, Social } from './index.styled';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa';
+import { FaFacebook, FaYoutubeSquare, FaInstagram } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
 import React, { useRef, useEffect } from 'react';
 const ContactView: React.FC = () => {
@@ -44,20 +44,18 @@ const ContactView: React.FC = () => {
         <Form ref={formRef} onSubmit={sendEmail}>
           <Wrapper justify={'center'}>
             <Input type='text' id='name' name="name" placeholder='Име'/>
-            <Input type='email' id='email' name="email" placeholder='Email'/>
+            <Input type='email' id='email' name="email" placeholder='Имейл'/>
           </Wrapper>
-          <Input type='text' id='subject' name='subject' placeholder='Subject'/>
-          <TextArea id='message' placeholder='Message' name='message'></TextArea>
-          <Button>Send</Button>
+          <Input type='text' id='subject' name='subject' placeholder='Относно'/>
+          <TextArea id='message' placeholder='Съобщение...' name='message'></TextArea>
+          <Button>Изпрати</Button>
         </Form>
         <SocialWrapper>
-          <p>Follow Me</p>
+          <p>Последвай ни!</p>
           <Social>
             <FaFacebook onClick={() => navigateTo('https://www.facebook.com/krushkov.yordan/')}/>
-            <FaTwitter onClick={() => navigateTo('https://twitter.com/yordankrushkov')}/>
             <FaInstagram onClick={() => navigateTo('https://instagram.com/yordankrushkov')}/>
-            <FaLinkedinIn onClick={() => navigateTo('https://www.linkedin.com/in/yordan-krushkov/')}/>
-            <FaGithub onClick={() => navigateTo('https://github.com/YordanKrushkov')}/>
+            <FaYoutubeSquare onClick={() => navigateTo('https://instagram.com/yordankrushkov')}/>
           </Social>
         </SocialWrapper>
       </Wrapper>

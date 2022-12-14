@@ -1,18 +1,18 @@
-import { laptop, mobile } from '@constants';
+import { laptop, tablet } from '@constants';
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
  width: 60%;
  margin: 0 auto;
  ${laptop({ width: '80%' })}
- ${mobile({ width: '90%' })}
+ ${tablet({ width: '90%' })}
 `;
 export const Title = styled.h1`
   text-align: center;
   font-family: 'ComfortaaBold';
   margin-bottom: 40px;
   font-size: 36px;
- ${mobile({ fontSize: '26px' })}
+ ${tablet({ fontSize: '26px' })}
 
 `;
 
@@ -25,23 +25,23 @@ export const Day = styled.div`
     margin-bottom: 10px;
    font-size: 28px;
    font-weight: bolder;
-   ${mobile({ fontSize: '20px' })}
+   ${tablet({ fontSize: '20px' })}
 
   }
 `;
 export const Info = styled.div`
   display: flex;
   gap: 40px;
-  ${mobile({ gap: '18px' })}
+  ${tablet({ gap: '18px' })}
 
   h4{
       font-size: 24px;
-    ${mobile({ fontSize: '16px' })}
+    ${tablet({ fontSize: '16px' })}
   }
 `;
 export const AffterText = styled.p`
 font-family: 'ComfortaaLight';
 font-style: italic;
   font-size: 18px;
-  ${mobile({ fontSize: '14px' })}
+  ${tablet({ fontSize: '14px' })}
 `;

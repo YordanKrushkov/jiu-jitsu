@@ -1,4 +1,4 @@
-import { mobile } from '@constants';
+import { tablet } from '@constants';
 import styled from 'styled-components';
 
 export const Image = styled.div` 
@@ -11,7 +11,7 @@ position: relative;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: blur(3px) brightness(0.4) sepia(1);
+    filter: blur(1.5px) brightness(0.4) sepia(1);
 
   }
 `;
@@ -27,18 +27,18 @@ export const TextWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  ${mobile({ top: '10%', left: '0', right: '0', margin: 'auto' })}
+  ${tablet({ top: '10%', left: '0', right: '0', margin: 'auto' })}
 
   h1{
     text-transform: uppercase;
     font-size: 42px;
     margin-bottom: 10px;
-    ${mobile({ fontSize: '22px' })}
+    ${tablet({ fontSize: '22px' })}
   }
   h4{
     font-size: 30px;
     margin-top: 5px;
-    ${mobile({ fontSize: '25px' })}
+    ${tablet({ fontSize: '25px' })}
 
   }
 `;
@@ -54,7 +54,7 @@ export const Button = styled.button`
     border-radius: 2px;
     margin-left: 30px;
     border: 2px solid white;
-    ${mobile({ fontSize: '25px', marginLeft: '0' })}
+    ${tablet({ fontSize: '25px', marginLeft: '0' })}
 
     &:hover{
       cursor: pointer;

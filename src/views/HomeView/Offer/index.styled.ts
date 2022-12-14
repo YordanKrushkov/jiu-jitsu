@@ -1,4 +1,4 @@
-import { mobile } from '@constants';
+import { tablet } from '@constants';
 import styled from 'styled-components';
 export const Wrapper = styled.div`
   gap: 20px;
@@ -14,7 +14,7 @@ export const TextWrapper = styled.div`
     margin-bottom:2px;
     color: ${({ theme }) => theme.colors.red};
     font-family: 'ComfortaaExtraBold';
-    ${mobile({ fontSize: '22px' })}
+    ${tablet({ fontSize: '22px' })}
 
   }
   h1{
@@ -22,7 +22,7 @@ export const TextWrapper = styled.div`
     color: ${({ theme }) => theme.colors.textColor};
     font-size: 52px;
     margin: 5px 0 24px;
-    ${mobile({ fontSize: '25px' })}
+    ${tablet({ fontSize: '25px' })}
 
   }
 `;
@@ -32,7 +32,7 @@ export const CardWrapper = styled.div`
   width: 80%;
   margin: 20px auto;
   justify-content: center;
-  ${mobile({ flexDirection: 'column' })}
+  ${tablet({ flexDirection: 'column' })}
 
 `;
 export const Card = styled.div` 
@@ -42,13 +42,13 @@ export const Card = styled.div`
    flex-direction: column;
    align-items: center;
    max-width: 280px;
-   ${mobile({ transform: 'skew(-5deg)', maxWidth: '350px', width: '100%' })};
+   ${tablet({ transform: 'skew(-5deg)', maxWidth: '350px', width: '100%' })};
 
    p{
     transform: skew(10deg);
       text-align: center;
       padding: 0 20px;
-    ${mobile({ transform: 'skew(5deg)' })};
+    ${tablet({ transform: 'skew(5deg)' })};
 
   } 
 `;
@@ -57,7 +57,7 @@ export const Image = styled.div`
   height: 260px;
   padding: 20px;
   transform: skew(10deg);
-  ${mobile({ transform: 'skew(5deg)' })};
+  ${tablet({ transform: 'skew(5deg)' })};
 
   img{
     height: 100%;

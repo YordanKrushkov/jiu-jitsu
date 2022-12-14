@@ -31,7 +31,7 @@ const NavList = styled.div`
   position: absolute;
   z-index: 999;
   left: 0;
-  top: 62px;
+  top: 0;
   display: flex;
   flex-direction: column;
   height: 100vh;

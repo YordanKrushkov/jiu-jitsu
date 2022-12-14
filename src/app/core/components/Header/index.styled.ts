@@ -1,4 +1,4 @@
-import { mobile } from '@constants';
+import { desktop, tablet } from '@constants';
 import styled from 'styled-components';
 export const HeaderWrapper = styled.header`
   display: flex;
@@ -12,7 +12,7 @@ export const Logo = styled.div`
   flex-direction: column;
   align-items: center;
   height: 60px;
-  ${mobile({ position: 'absolute', left: '0', right: '0', top: '0px', margin: 'auto', height: '50px', width: 'fit-content' })}
+  ${desktop({ position: 'absolute', left: '0', right: '0', top: '0px', margin: 'auto', height: '50px', width: 'fit-content' })}
   p{
     margin: 0;
   }
@@ -20,7 +20,7 @@ export const Logo = styled.div`
   img{
     height: 100%;
     width: 60px;
-    ${mobile({ width: '50px' })}
+    ${tablet({ width: '50px' })}
 
   }
 `;
@@ -53,7 +53,7 @@ export const Button = styled.button`
     /* box-shadow: ${({ theme }) => theme.styles.boxShadow}; */
     border-radius: 2px;
     border: 1px solid ${({ theme }) => theme.colors.textColor};
-    ${mobile({ padding: '5px 10px', fontSize: '14px' })}
+    ${tablet({ padding: '5px 10px', fontSize: '14px' })}
     &:hover{
     cursor: pointer;
     /* box-shadow: ${({ theme }) => theme.styles.boxShadowHover}; */

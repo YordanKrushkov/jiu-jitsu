@@ -6,8 +6,7 @@ import bjj from '@assets/images/bjjLogo.png';
 
 const MobileNavigation: React.FC = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const [isShow, setIsShow] = useState(true);
-
+  const [isShow, setIsShow] = useState(false);
   const setShowMenuHandler = (): void => {
     if (showMenu) {
       setIsShow(false);
@@ -25,7 +24,7 @@ const MobileNavigation: React.FC = () => {
         <img src={bjj} alt='logo'/>
       </Logo>
       <div></div>
-      {showMenu && <NavLinks isShow={isShow} />}
+      {showMenu && <NavLinks isShow={isShow} toggleHandler={setShowMenuHandler} />}
     </MobileNavWrapper>
   );
 };
